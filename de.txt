@@ -1,17 +1,17 @@
 === levels/nand_gate ===
 
-$17420270098223 In this level the challenge is to figure out how the NAND component works. Be [color=#dd6576]sure[/color] to figure it out before you complete this level, or you will get stuck next level!
-$11034378482152 Correct! You have unlocked the NAND gate. With this component you can build everything else in your computer!
-$18270083417453 Check
-$19208664264770 [b]Instruction[/b]\nClick any of the gray buttons in the last row of the table.
-$17923274216766 We have decided you are probably not a plant.
-$14777350869870 We are very impressed with how well you completed the last test!
-$17994568832660 [b]Instruction[/b]\nThe NAND component in the middle changes the flow of the circuit.\nUse the bar on the left to experiment with the inputs, see how they affect the output and fill in the last row of the table.
+$17420270098223 In diesem Level musst du herausfinden, wie das NAND Gatter funktioniert. Sei dir [color=#dd6576]sicher[/color], dass du es verstanden hast, sonst wirst im nächsten Level Schwierigkeiten haben!
+$11034378482152 Richtig! Du hast das NAND Gatter freigeschaltet. Mit diesem Bestandteil kannst du alles andere in deinem Computer bauen!
+$18270083417453 überprüfen
+$19208664264770 [b]Anleitung[/b]\nKlick auf die grauen Knöpfe in der letzten Zeile der Tabelle.
+$17923274216766 Wir haben entschieden, dass du warscheinlich keine Pflanze bist.
+$14777350869870 Wir sind sehr beeindruckt, wie gut du den letzten Test bestanden hast!
+$17994568832660 [b]Anleitung[/b]\nDas NAND Gatter in der Mitte verändert den Schaltkreis.\nNutze die linke Sidebar um mit den Inputs zu experimentieren. Schau dir an, wie sie den Output verändern und fülle die letzte Zeile der Tabelle aus.
 
 
 === levels/xnor ===
 
-$11090938799865 Create the inverse XOR gate, known as XNOR.
+$11090938799865 Baue das umgekehrte XO Gatter, das XNOR Gatter.
 
 
 === levels/decoder ===
