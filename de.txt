@@ -646,30 +646,30 @@ Zum Beispiel wäre 4 negiert -4 und -9 negiert 9. (Für eine beliebige Zahl x, w
 
 === levels/byte_and ===
 
-$15885763626223 Create a circuit that ANDs two bytes bitwise.
+$15885763626223 Entwerfe eine Schaltung die zwei Bytes bitweise verundet.
 
 
 === levels/byte_mux ===
 
-$18296416014178 When the bit selector input is [OFF], output Byte A, otherwise output Byte B.
+$18296416014178 Wenn das Selektions-Bit [OFF] ist, gib Byte A aus, ansonsten gib Byte B aus.
 $17093993196554
-Even though he did not pass our tests we decided to keep the dog. Unlike most earthlings he is fluffy and follows simple instructions well. 
+Auch wenn er unsere Tests nicht bestanden hat, haben wir entschieden den Hund zu behalten. Anders als die meisten Erdlinge ist er flauschig und folgt einfachen Anweisungen.
 
-We might want to team you two up, since you compliment each other's shortcomings well.
+Wir überlegen aus euch ein Team zu bilden, da ihr euch gut ergänzt.
 
 
 === levels/new_nor_gate ===
 
 $11362258372706
-Most creatures on Earth are agressive and do not know how to focus.
+Die meisten Kreaturen auf der Erde sind aggressiv und können sich nicht gut konzentrieren.
 
-To succeed you must learn to think logically, while not destroying things.
+Um dich zu verbessern musst du lernen logisch zu denken, ohne dabei Dinge zu zerstören.
 
 
 === levels/odd_number_of_signals ===
 
-$16173829560311 Using a maximum of 3 components, output [ON] only when an odd number of inputs are [ON].
-$18288998816979 This level has a [color=#e63e5b][url=odd_number]hint[/url][/color] you can use if you get stuck.
+$16173829560311 Gib [ON] aus, wenn eine ungerade Anzahl an Eingaben [ON] ist. Verwende dabei nicht mehr als 3 Komponenten.
+$18288998816979 Dieses Level hat einen [color=#e63e5b][url=odd_number]Hinweis[/url][/color], falls du Hilfe brauchst.
 
 
 === levels/binary_search ===
