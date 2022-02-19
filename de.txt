@@ -556,7 +556,7 @@ $18134632592542 You have built your computer, but to win the competition you sti
 $14060810229477 Add 6 registers to the map
 $14960344494328
 Sometimes it is useful to load a value directly from the program instead of from registers. This is called loading an immediate value. In the [color=#e49f44]LEG[/color] architecture we signal when we want to do this directly in the opcode. We can do that in the following way:
-	
+
 When the 8th bit of the opcode is [ON], use argument 1 as an immediate value, instead of as a register address.
 When the 7th bit of the opcode is [ON], use argument 2 as an immediate value, instead of as a register address.
 	
@@ -572,104 +572,104 @@ $10141611261952 [center]Implement immediate values[/center]
 === levels/delay_level ===
 
 $19986989895202
-All components have a delay. And in a circuit, the total delay is determined by the slowest path. This means you normally want to put things in parallel.
-In this level you must prove that you understand this concept.
-$11246430085016 Note, you can see the delay path by clicking the hour glass in the upper right corner.
-$12817338693402 The delay of any component is ultimately derived from the delay of the nand gate, which has a delay of 2. Build a circuit with a delay of 6 and a nand cost of 5.
+Alle Komponenten haben eine Verzögerung, das Delay. Das Delay einer Schaltung wird durch den langsamsten Pfad bestimmt. Das heißt man versucht grundsätzlich parallel zu arbeiten.
+In diesen Level sollst du zeigen, dass du dieses Konzept verstanden hast.
+$11246430085016 Hinweis: Du kannst das Delay der einzelnen Pfade durch einen Klick auf die Sanduhr rechts oben anzeigen lassen.
+$12817338693402 Das Delay einer Komponente ist letzten Endes auf das Delay des NAND-Gatters zurückzuführen, welches ein Delay von 2 hat. Baue eine Schaltung mit einem Delay von 6 und NAND Kosten von 5.
 
 
 === levels/computing_codes ===
 
 $14458828731919
-Time to merge in the "Arithmetic Engine" circuit you made previously with the register circuit. The calculation circuit was saved in the component factory and can now be added as a component. If you forgot which pin does what, check the circuit in the component factory.
+Es ist an der Zeit deine "Arithmetic Engine" mit der Register Schaltung zu verbinden. Deine Schaltung wurde im Komponenten-Editor gespeichert und kann nun als Komponente verwendet werden. Falls du mal vergessen hast, was ein Pin bewirkt, kehre einfach in den Komponenten-Editor zurück.
 
-Use the decoder you built to figure out if we should copy between registers or do calculations. Here are the 4 different modes again:
+Benutze deinen Decoder, um herauszufinden, ob zwischen Registern kopiert, oder Berechnungen durchgeführt werden sollen. Hier noch einmal die 4 Modi:
 [OFF][OFF] Immediate
 [ON][OFF] Copy
 [OFF][ON] Calculate
 [ON][ON] Condition
 
-For this level you only have to worry about the copy and calculate mode, check [INSTRUCTIONS] in the top panel for the details. When in calculate mode, take [color=#e49f44]REG 1[/color] and [color=#e49f44]REG 2[/color] as inputs, and save the result in [color=#e49f44]REG 3[/color].
+In diesem Level interessieren wir uns nur für Copy und Calculate, siehe oben unter [INSTRUCTIONS] für mehr Details. Im Calculate Modus, nimm [color=#e49f44]REG 1[/color] und [color=#e49f44]REG 2[/color] als Eingaben und speichere das Ergebnis in [color=#e49f44]REG 3[/color].
 
-[tip]Don't forget the 3 bit decoder component has a disable bit.[/tip]
-$13013863429580 For this level an extra pin has been added to the registers. This pin always emits the value of the register, regardless if load is selected or not.
+[tip]Vergiss nicht, dass der 3 Bit Decoder ein Bit zum Deaktivieren hat![/tip]
+$13013863429580 Für dieses Level haben alle Register einen weiteren Port. Dieser Port gibt dauerhaft den Wert des Registers wieder, unabhängig davon, ob load angewählt wurde oder nicht.
 
 
 === levels/push_pop ===
 
-$19245209470436 Create a stack
-$12227209887733 Each tick the inputs will either signal PUSH or POP. If it is PUSH, store the value on top of the stack. When it is POP remove that value from the stack and output it.
-$15662660252584 Do nothing
-$18761197388580 In order to cut spending, it has been decided to change the queuing system at public offices so that fewer people will go. Instead of first come, first served, we are implementing a last come first served policy. Think of it like a [color=#e49f44]stack[/color] of numbered slips where the citizens either put a slip on top (called [color=#e49f44]PUSH[/color]), or the bureaucrats take one off the top of the stack (called [color=#e49f44]POP[/color]). We want you to implement this new system.
+$19245209470436 Erstelle einen Stapel (Stack)
+$12227209887733 Jeden Tick wird entweder PUSH oder POP eingegeben. Im Falle von PUSH, speichere den Wert auf dem Stapel. Im Falle von POP, entferne den obersten Wert auf dem Stapel und gib ihn aus.
+$15662660252584 Tue nichts
+$18761197388580 Um Kosten zu sparen, wurde entschieden das Warteschlangensystem in öffentlichen Ämtern so zu ändern, dass weniger Leute hingehen. Anstelle von "wer zuerst kommt, mahlt zuerst", werden wir "wer zuletzt kommt, den belohnt das Leben" implementieren. Stell es dir wie einen [color=#e49f44]Stapel[/color] nummerierte Kärtchen vor, wo die Bürger entweder ein Weiteres darauflegen (genannt [color=#e49f44]PUSH[/color]) oder die Bürokraten ein Kärtchen von oben wegnehmen (genannt [color=#e49f44]POP[/color]). Wir wollen, dass du dieses System implementierst.
 
 
 === levels/circumference ===
 
-$11331851878040 Also you now have access to assembly programming. It allows you to add names for instructions, so you can for example type "add" instead of inputting 68.
+$11331851878040 Du hast jetzt auch Zugriff auf den Assembly-Editor. Dieser erlaubt es dir Namen für Instruktionen festzulegen, so zum Beispiel "add" für 68.
 $11023157447564
 2×π×r
 
-r is the input.
-And you can approximate π as 3.
+r ist die Eingabe.
+Zur Vereinfachung ist π = 3.
 
-Send the answer to output when it has been calculated.
-$15260627694444 In order to calibrate said laser, we want you to calculate the circumference of the asteroids using an advanced equation.
-$12669851602178 [center]Calculate the circumference of the asteroids[/center]
-$16954408093587 On our ship we naturally shoot incoming asteroids with lasers.
+Gibt die berechnete Antwort aus.
+$15260627694444 Um besagte Laser zu kalibrieren, wollen wir, dass du den Umfang der Asteroiden durch fortschrittliche Berechnungen ermittelst.
+$12669851602178 [center]Berechne den Umfang der Asteroiden[/center]
+$16954408093587 Auf unserem Schiff werden nahende Asteroiden üblicherweise von unserem Laser beschossen.
 
 
 === levels/alu_1 ===
 
 $15865646260225
- [color=#b72d41][b]WISDOM:[/b][/color] 
- Pain is temporary, glory is 
- forever.
+ [color=#b72d41][b]WEISHEIT:[/b][/color]
+ Schmerz ist vergänglich,
+ Ruhm hält ewig.
 $17594613477534
-Create a device that can OR, NAND, NOR or AND two inputs. The third input will be the [INSTRUCTION]. An [INSTRUCTION] is just what we call the number that determines what to compute.
+Entwerfe eine Schaltung, die auf zwei Eingaben OR, NAND, NOR oder AND anwenden kann. Die dritte Eingabe ist die [INSTRUCTION]. Eine [INSTRUCTION] ist eine Zahl, die bestimmt, was berechnet werden soll.
 
-Instructions:
+Instruktionen:
 [code][color=#87a8c8]0 OR
 1 NAND
 2 NOR
 3 AND[/color][/code]
 
-Also you can't move the red components in this level, for reasons that will be revealed later.
+Zudem kannst du die roten Komponenten in diesem Level nicht bewegen. Die Gründe erfährst du später.
 
 
 === levels/signed_negator ===
 
-$10866019808027 For this level you probably want to turn on signed numbers, so the highest bit shows as -128. Click "+255" located in the top panel.
+$10866019808027 In diesem Level wirst du vermutlich Zahl mit Vorzeichen brauchen. Klicke dafür oben auf "+255", falls nötig.
 $10400106910274
-Taking the input as signed (where the 8th bit is -128), make a component that takes a number and negates it.
-For example 4 negated would become -4. -9 negated would become 9.
+Betrachte die Eingabe als vorzeichenbehaftet (das 8. Bit ist -128) und baue eine Komponente, die eine Zahl negieren kann.
+Zum Beispiel wäre 4 negiert -4 und -9 negiert 9. (Für eine beliebige Zahl x, wollen wir also -x berechnen)
 
 
 === levels/byte_and ===
 
-$15885763626223 Create a circuit that ANDs two bytes bitwise.
+$15885763626223 Entwerfe eine Schaltung die zwei Bytes bitweise verundet.
 
 
 === levels/byte_mux ===
 
-$18296416014178 When the bit selector input is [OFF], output Byte A, otherwise output Byte B.
+$18296416014178 Wenn das Selektions-Bit [OFF] ist, gib Byte A aus, ansonsten gib Byte B aus.
 $17093993196554
-Even though he did not pass our tests we decided to keep the dog. Unlike most earthlings he is fluffy and follows simple instructions well. 
+Auch wenn er unsere Tests nicht bestanden hat, haben wir entschieden den Hund zu behalten. Anders als die meisten Erdlinge ist er flauschig und folgt einfachen Anweisungen.
 
-We might want to team you two up, since you compliment each other's shortcomings well.
+Wir überlegen aus euch ein Team zu bilden, da ihr euch gut ergänzt.
 
 
 === levels/new_nor_gate ===
 
 $11362258372706
-Most creatures on Earth are agressive and do not know how to focus.
+Die meisten Kreaturen auf der Erde sind aggressiv und können sich nicht gut konzentrieren.
 
-To succeed you must learn to think logically, while not destroying things.
+Um dich zu verbessern musst du lernen logisch zu denken, ohne dabei Dinge zu zerstören.
 
 
 === levels/odd_number_of_signals ===
 
-$16173829560311 Using a maximum of 3 components, output [ON] only when an odd number of inputs are [ON].
-$18288998816979 This level has a [color=#e63e5b][url=odd_number]hint[/url][/color] you can use if you get stuck.
+$16173829560311 Gib [ON] aus, wenn eine ungerade Anzahl an Eingaben [ON] ist. Verwende dabei nicht mehr als 3 Komponenten.
+$18288998816979 Dieses Level hat einen [color=#e63e5b][url=odd_number]Hinweis[/url][/color], falls du Hilfe brauchst.
 
 
 === levels/binary_search ===
