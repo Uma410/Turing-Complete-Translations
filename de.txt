@@ -556,7 +556,7 @@ $18134632592542 You have built your computer, but to win the competition you sti
 $14060810229477 Add 6 registers to the map
 $14960344494328
 Sometimes it is useful to load a value directly from the program instead of from registers. This is called loading an immediate value. In the [color=#e49f44]LEG[/color] architecture we signal when we want to do this directly in the opcode. We can do that in the following way:
-	
+
 When the 8th bit of the opcode is [ON], use argument 1 as an immediate value, instead of as a register address.
 When the 7th bit of the opcode is [ON], use argument 2 as an immediate value, instead of as a register address.
 	
@@ -572,27 +572,27 @@ $10141611261952 [center]Implement immediate values[/center]
 === levels/delay_level ===
 
 $19986989895202
-All components have a delay. And in a circuit, the total delay is determined by the slowest path. This means you normally want to put things in parallel.
-In this level you must prove that you understand this concept.
-$11246430085016 Note, you can see the delay path by clicking the hour glass in the upper right corner.
-$12817338693402 The delay of any component is ultimately derived from the delay of the nand gate, which has a delay of 2. Build a circuit with a delay of 6 and a nand cost of 5.
+Alle Komponenten haben eine Verzögerung, das Delay. Das Delay einer Schaltung wird durch den langsamsten Pfad bestimmt. Das heißt man versucht grundsätzlich parallel zu arbeiten.
+In diesen Level sollst du zeigen, dass du dieses Konzept verstanden hast.
+$11246430085016 Hinweis: Du kannst das Delay der einzelnen Pfade durch einen Klick auf die Sanduhr rechts oben anzeigen lassen.
+$12817338693402 Das Delay einer Komponente ist letzten Endes auf das Delay des NAND-Gatters zurückzuführen, welches ein Delay von 2 hat. Baue eine Schaltung mit einem Delay von 6 und NAND Kosten von 5.
 
 
 === levels/computing_codes ===
 
 $14458828731919
-Time to merge in the "Arithmetic Engine" circuit you made previously with the register circuit. The calculation circuit was saved in the component factory and can now be added as a component. If you forgot which pin does what, check the circuit in the component factory.
+Es ist an der Zeit deine "Arithmetic Engine" mit der Register Schaltung zu verbinden. Deine Schaltung wurde im Komponenten-Editor gespeichert und kann nun als Komponente verwendet werden. Falls du mal vergessen hast, was ein Pin bewirkt, kehre einfach in den Komponenten-Editor zurück.
 
-Use the decoder you built to figure out if we should copy between registers or do calculations. Here are the 4 different modes again:
+Benutze deinen Decoder, um herauszufinden, ob zwischen Registern kopiert, oder Berechnungen durchgeführt werden sollen. Hier noch einmal die 4 Modi:
 [OFF][OFF] Immediate
 [ON][OFF] Copy
 [OFF][ON] Calculate
 [ON][ON] Condition
 
-For this level you only have to worry about the copy and calculate mode, check [INSTRUCTIONS] in the top panel for the details. When in calculate mode, take [color=#e49f44]REG 1[/color] and [color=#e49f44]REG 2[/color] as inputs, and save the result in [color=#e49f44]REG 3[/color].
+In diesem Level interessieren wir uns nur für Copy und Calculate, siehe oben unter [INSTRUCTIONS] für mehr Details. Im Calculate Modus, nimm [color=#e49f44]REG 1[/color] und [color=#e49f44]REG 2[/color] als Eingaben und speichere das Ergebnis in [color=#e49f44]REG 3[/color].
 
-[tip]Don't forget the 3 bit decoder component has a disable bit.[/tip]
-$13013863429580 For this level an extra pin has been added to the registers. This pin always emits the value of the register, regardless if load is selected or not.
+[tip]Vergiss nicht, dass der 3 Bit Decoder ein Bit zum Deaktivieren hat![/tip]
+$13013863429580 Für dieses Level haben alle Register einen weiteren Port. Dieser Port gibt dauerhaft den Wert des Registers wieder, unabhängig davon, ob load angewählt wurde oder nicht.
 
 
 === levels/push_pop ===
