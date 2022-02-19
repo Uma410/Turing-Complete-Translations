@@ -597,51 +597,51 @@ $13013863429580 Für dieses Level haben alle Register einen weiteren Port. Diese
 
 === levels/push_pop ===
 
-$19245209470436 Create a stack
-$12227209887733 Each tick the inputs will either signal PUSH or POP. If it is PUSH, store the value on top of the stack. When it is POP remove that value from the stack and output it.
-$15662660252584 Do nothing
-$18761197388580 In order to cut spending, it has been decided to change the queuing system at public offices so that fewer people will go. Instead of first come, first served, we are implementing a last come first served policy. Think of it like a [color=#e49f44]stack[/color] of numbered slips where the citizens either put a slip on top (called [color=#e49f44]PUSH[/color]), or the bureaucrats take one off the top of the stack (called [color=#e49f44]POP[/color]). We want you to implement this new system.
+$19245209470436 Erstelle einen Stapel (Stack)
+$12227209887733 Jeden Tick wird entweder PUSH oder POP eingegeben. Im Falle von PUSH, speichere den Wert auf dem Stapel. Im Falle von POP, entferne den obersten Wert auf dem Stapel und gib ihn aus.
+$15662660252584 Tue nichts
+$18761197388580 Um Kosten zu sparen, wurde entschieden das Warteschlangensystem in öffentlichen Ämtern so zu ändern, dass weniger Leute hingehen. Anstelle von "wer zuerst kommt, mahlt zuerst", werden wir "wer zuletzt kommt, den belohnt das Leben" implementieren. Stell es dir wie einen [color=#e49f44]Stapel[/color] nummerierte Kärtchen vor, wo die Bürger entweder ein Weiteres darauflegen (genannt [color=#e49f44]PUSH[/color]) oder die Bürokraten ein Kärtchen von oben wegnehmen (genannt [color=#e49f44]POP[/color]). Wir wollen, dass du dieses System implementierst.
 
 
 === levels/circumference ===
 
-$11331851878040 Also you now have access to assembly programming. It allows you to add names for instructions, so you can for example type "add" instead of inputting 68.
+$11331851878040 Du hast jetzt auch Zugriff auf den Assembly-Editor. Dieser erlaubt es dir Namen für Instruktionen festzulegen, so zum Beispiel "add" für 68.
 $11023157447564
 2×π×r
 
-r is the input.
-And you can approximate π as 3.
+r ist die Eingabe.
+Zur Vereinfachung ist π = 3.
 
-Send the answer to output when it has been calculated.
-$15260627694444 In order to calibrate said laser, we want you to calculate the circumference of the asteroids using an advanced equation.
-$12669851602178 [center]Calculate the circumference of the asteroids[/center]
-$16954408093587 On our ship we naturally shoot incoming asteroids with lasers.
+Gibt die berechnete Antwort aus.
+$15260627694444 Um besagte Laser zu kalibrieren, wollen wir, dass du den Umfang der Asteroiden durch fortschrittliche Berechnungen ermittelst.
+$12669851602178 [center]Berechne den Umfang der Asteroiden[/center]
+$16954408093587 Auf unserem Schiff werden nahende Asteroiden üblicherweise von unserem Laser beschossen.
 
 
 === levels/alu_1 ===
 
 $15865646260225
- [color=#b72d41][b]WISDOM:[/b][/color] 
- Pain is temporary, glory is 
- forever.
+ [color=#b72d41][b]WEISHEIT:[/b][/color]
+ Schmerz ist vergänglich,
+ Ruhm hält ewig.
 $17594613477534
-Create a device that can OR, NAND, NOR or AND two inputs. The third input will be the [INSTRUCTION]. An [INSTRUCTION] is just what we call the number that determines what to compute.
+Entwerfe eine Schaltung, die auf zwei Eingaben OR, NAND, NOR oder AND anwenden kann. Die dritte Eingabe ist die [INSTRUCTION]. Eine [INSTRUCTION] ist eine Zahl, die bestimmt, was berechnet werden soll.
 
-Instructions:
+Instruktionen:
 [code][color=#87a8c8]0 OR
 1 NAND
 2 NOR
 3 AND[/color][/code]
 
-Also you can't move the red components in this level, for reasons that will be revealed later.
+Zudem kannst du die roten Komponenten in diesem Level nicht bewegen. Die Gründe erfährst du später.
 
 
 === levels/signed_negator ===
 
-$10866019808027 For this level you probably want to turn on signed numbers, so the highest bit shows as -128. Click "+255" located in the top panel.
+$10866019808027 In diesem Level wirst du vermutlich Zahl mit Vorzeichen brauchen. Klicke dafür oben auf "+255", falls nötig.
 $10400106910274
-Taking the input as signed (where the 8th bit is -128), make a component that takes a number and negates it.
-For example 4 negated would become -4. -9 negated would become 9.
+Betrachte die Eingabe als vorzeichenbehaftet (das 8. Bit ist -128) und baue eine Komponente, die eine Zahl negieren kann.
+Zum Beispiel wäre 4 negiert -4 und -9 negiert 9. (Für eine beliebige Zahl x, wollen wir also -x berechnen)
 
 
 === levels/byte_and ===
